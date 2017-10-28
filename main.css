@@ -1,0 +1,148 @@
+body {
+    margin: 0px;
+    background-color: #a3adb0;
+}
+
+.main {
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-family: 'Electrolize', sans-serif;
+    text-align: center;
+    color: #ffffff;
+    margin: 0px;
+}
+
+.titlehr {
+    width: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+    height: 10px;
+    border: none;
+    background-color: white;
+}
+
+#fuel {
+    transition: all 0.3s;
+}
+
+#reactor {
+    transition: all 0.3s;
+}
+
+#nozzle {
+    transition: all 0.3s;
+}
+
+#app {
+    justify-self: center;
+}
+
+.theBox {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#content {
+/*    display: grid;*/
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Electrolize', sans-serif;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.heading {
+    transition: all 0.3s;
+    margin: 0;
+}
+
+.info {
+    /*    text-align: justify;*/
+}
+
+@media only screen and (min-width: 500px) {
+    #content {
+/*        display: grid;*/
+        margin-left: 30px;
+        margin-right: 30px;
+        font-family: 'Electrolize', sans-serif;
+        color: #ffffff;
+    }
+}
+
+@media only screen and (min-width: 749px) {
+    #content {
+/*        display: grid;*/
+        width: 600px;
+        justify-self: center;
+        font-family: 'Electrolize', sans-serif;
+        color: #ffffff;
+    }
+
+    #app {
+        width: 400px;
+        height: 710px;
+    }
+}
+
+@media only screen and (min-width: 1086px) {
+    #content {
+/*        display: grid;*/
+/*        width: 600px;*/
+        margin: 0px;
+        margin-top: 25px;
+/*        margin-right: 70px;*/
+        font-family: 'Electrolize', sans-serif;
+        color: #ffffff;
+        /*        grid-template-columns: 1fr 1fr;*/
+                grid-column: 2;
+        justify-self: start; 
+    }
+
+    .theBox {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #app {
+/*        width: 400px;*/
+/*        height: 710px;*/
+        grid-column: 1;
+        justify-self: end;
+        margin-right: 70px;
+    }
+
+}
+
+   .m-btn-flat {
+    background-color: transparent;
+    box-shadow: none;
+    color: grey;
+    padding: 8px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font: 500 14px/20px Roboto, sans-serif;
+    height: 36px;
+    margin: 0;
+    min-width: 36px;
+    outline: 0;
+    overflow: hidden;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s;
+    /* For Safari 3.1 to 6.0 */
+    transition: all 0.5s;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.m-btn-flat:hover {
+    background-color: rgb(226, 242, 255);
+}
